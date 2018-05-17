@@ -1,0 +1,14 @@
+--cpu Cortex-M0
+".\objects\hw_clock.o"
+".\objects\startup_stm32f071xb.o"
+".\objects\system_stm32f0xx.o"
+"..\LIB\lib\hfim5_conv_ad.lib"
+"..\LIB\lib\HFIM5_LIB.lib"
+".\objects\logic.o"
+".\objects\main.o"
+".\objects\task.o"
+"..\STM32F0xx_HAL_Driver\Src\hal_driver.lib"
+--strict --scatter ".\Objects\EepromClean-A.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\EepromClean-A.map" -o .\Objects\EepromClean-A.axf
